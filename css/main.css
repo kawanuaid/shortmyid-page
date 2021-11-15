@@ -27,6 +27,7 @@
   }
   .card-text {
     text-align: center;
+    font-size: 0.8rem;
   }
   .card-text > a {
     text-decoration: none;
