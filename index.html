@@ -12,7 +12,8 @@
   <link rel="icon" href="https://html.short.my.id/favicon-16x16.png" sizes="16x16" type="image/png">
   <link rel="icon" href="https://html.short.my.id/favicon-32x32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" size="180x180" href="https://html.short.my.id/apple-touch-icon.png" type="image/png">
-  <title>Short My ID</title>
+  <title>Short My ID - URL Shortener</title>
+  <meta name="description" content="Short My ID is a free URL shortener to make it easy to share links via WhatsApp, so it’s easy to remember.">
   <link rel="stylesheet" href="https://html.short.my.id/css/main.css">
 </head>
 <body>
@@ -20,15 +21,16 @@
     <h5 class="card-header">
         ✂️ Shorten your URLs !</h5>
     <div class="card-body">
-      <h5 class="card-title">Please enter the long URL to be shortened :</h5>
+      <h5 class="card-title">Please enter the URL:</h5>
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Example: https://example.com/" id="text">
+        <input type="text" class="form-control" placeholder="Ex.: https://example.com/" id="text">
         <div class="input-group-append">
-          <button class="btn btn-primary" type="button" onclick='shorturl()' id="searchbtn">Shorten it</button>
+          <button class="btn btn-danger" type="button" onclick='shorturl()' id="searchbtn">Shorten Now</button>
         </div>
       </div>    
       <div class="card-text">
-        © 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script> Short My ID.
+        © 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script> Short My ID. 
+        <a href="https://kontak.kid.or.id/" target="_blank" rel="noopener noreferrer">DMCA/Takedown Request</a>
       </div>
       <p id="notice"></p>             
     </div>
@@ -44,7 +46,7 @@
         </div>
         <div class="modal-body" id="result">No result</div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">Copy</button>
+          <button type="button" class="btn btn-danger" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">Copy URL</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>    
         </div>
       </div>
